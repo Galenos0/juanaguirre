@@ -1,0 +1,6 @@
+.vscode
+**.sqlite3
+**_pycache_
+*/migrations/*
+!**/migrations
+!**/migrations/_init_.py

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>
+        productos
+    </h2>
+    {% for post in data %}
+        <ul>
+            <li>
+                <h3>
+                    {{post.nombre}}
+                </h3>
+                <p>
+                    {{post.descripcion}}
+                </p>
+                <p>
+                    ${{post.precio}}
+                </p>
+                <p>
+                    {{post.fecha_registro}}
+                </p>
+
+            </li>
+        </ul>
+    {% endfor %}
+{% endblock %}
